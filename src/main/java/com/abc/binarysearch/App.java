@@ -49,5 +49,16 @@ public class App
 		obj.readele(arr,n);
 		obj.sort(arr);
 		obj.printele(arr);
+		System.out.print("Enter searching element: ");
+		int key=sc.nextInt();
+		int res=obj.binarySearch(arr,key,0,arr.length-1);
+		if(res!=-404)
+		{
+			System.out.println("Element found at "+(res+1)+" th position");
+		}
+		else
+		{
+			System.out.println("Element not found");
+		}
     }
 }
